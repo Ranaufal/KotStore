@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDataBarangActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginVertical="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/green"
+        android:text="Entri Data Barang"/>
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:textColorHint="@color/red"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp"
+            android:drawableRight="@drawable/baseline_inbox_24"
+            android:hint="Nama Barang"
+            />
+        <EditText
+            android:id="@+id/edtDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi"
+            android:background="@drawable/border"
+            android:textColorHint="@color/red"
+            android:drawableRight="@drawable/baseline_description_24"
+            android:layout_marginBottom="15dp"
+            android:padding="15dp"
+            />
+        <EditText
+            android:id="@+id/edtHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga Barang"
+            android:background="@drawable/border"
+            android:layout_marginBottom="15dp"
+            android:drawableRight="@drawable/baseline_price_change_24"
+            android:textColorHint="@color/red"
+            android:padding="15dp"
+            />
+        <EditText
+            android:id="@+id/edtPromo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga Promo"
+            android:drawableRight="@drawable/baseline_discount2_24"
+            android:background="@drawable/border"
+            android:layout_marginBottom="15dp"
+            android:textColorHint="@color/red"
+            android:padding="15dp"
+            />
+        <EditText
+            android:id="@+id/edtLinkGambar"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:hint="Link Gambar Barang"
+            android:drawableRight="@drawable/baseline_insert_link_24"
+            android:background="@drawable/border"
+            android:textColorHint="@color/red"
+            android:padding="15dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/form"
+        android:backgroundTint="@color/green"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/baseline_star_24"
+        android:text="SIMPAN DATA"/>
+</RelativeLayout>
